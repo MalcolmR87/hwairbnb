@@ -8,27 +8,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-    <nav class="text-white flex justify-center items-center">
-        <div class="flex">
+    <nav class="relative text-white flex justify-center items-center">
+        <div class="absolute inset-0 mt-5 ml-32">
             <a href=""><img class="w-20 h-20" src="/assests/airbnb-logo.png" alt="airbnb-logo"></a>
         </div>
-        <div class="flex justify-between">
-            <a href="">Places to stay</a>
-            <a href="">Experiences</a>
-            <a href="">Online Experiences</a>
+        <div class="absolute mt-32">
+            <a class="hover:underline mr-10" href="">Places to stay</a>
+            <a class="hover:underline mr-10" href="">Experiences</a>
+            <a class="hover:underline" href="">Online Experiences</a>
         </div>
-        <div class="flex items-center">
-            <a href="">Become a Host</a>
-            <img class="w-5 h-5" src="/assests/global-icon.jpg" alt="globe-image">
+        <div class="flex items-center absolute right-0 mr-52 mt-32">
+            <a class="hover:underline" href="">Become a Host</a>
+            <img class="w-5 h-5 ml-8" src="/assests/global-icon.jpg" alt="globe-image">
         </div>
-        <div class="flex rounded-full">
-            <a href=""><img class="w-10 h-10 text-white" src="/assests/hamburger-menu-icon.jpg" alt="airbnb-hamburger-menu"></a>
-            <img class="w-10 h-10" src="/assests/profile-icon.png" alt="airbnb-profile-image">
+        <div class="flex rounded-full absolute right-0 mt-32 mr-32">
+            <a href=""><img class="w-8 h-8 text-white" src="/assests/hamburger-menu-icon.jpg" alt="airbnb-hamburger-menu"></a>
+            <img class="w-8 h-8" src="/assests/profile-icon.png" alt="airbnb-profile-image">
         </div>
     </nav>
 
-    <div></div>
+    <div role="search" class="bg-white text-sm flex justify-between m-auto rounded-full mt-28 mx-72">
+        <button class="flex"><pre><b>Location</b>
+            Where are you going?</pre></button> <p class="text-3xl font-thin">|</p>
+        <button class="flex"><pre><b>Check In</b>
+Add dates</pre></button> <p class="text-3xl font-thin">|</p>
+        <button class="flex"><pre><b>Check Out</b>
+Add dates</pre></button> <p class="text-3xl font-thin">|</p>
+        <button class="flex"><pre><b>Guests</b>
+    Add Guests</pre></button>
+        <a href=""><img class="w-9 h-9 mt-1 mr-3" src="/assests/search.icon.png" alt="search-menu-icon"></a>
+    </div>
 
-    <section></section>
+    <section class="text-white bg-pink-500 rounded-md mt-24 mx-32 p-36">
+        <a class="text-4xl flex justify-center" href="">Help house 100,000 refuges fleeing Ukraine</a><br>
+        <button class="py-1 px-3 bg-pink-500 border-white border-solid border-2 rounded-md text-xs flex justify-center m-auto">Learn More</button>
+    </section>
 </body>
 </html>
